@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-$post_grid =  array(
+$post_grid = array(
     'key' => 'layout_655488a5c5aa0',
     'name' => 'post_grid',
     'label' => 'Post Grid',
@@ -107,44 +107,21 @@ $post_grid =  array(
         ),
         array(
             'key' => 'field_655488cfc5aa8',
-            'label' => 'Posts per Page: Desktop',
-            'name' => 'posts_per_page_desktop',
+            'label' => 'Posts per Page',
+            'name' => 'posts_per_page',
             'aria-label' => '',
             'type' => 'number',
             'instructions' => '',
             'required' => 0,
             'conditional_logic' => 0,
             'wrapper' => array(
-                'width' => '50',
+                'width' => '',
                 'class' => '',
                 'id' => '',
             ),
             'show_in_graphql' => 1,
             'default_value' => 8,
-            'min' => '',
-            'max' => '',
-            'placeholder' => '',
-            'step' => '',
-            'prepend' => '',
-            'append' => '',
-        ),
-        array(
-            'key' => 'field_655488e9c5aa9',
-            'label' => 'Posts per Page: Mobile',
-            'name' => 'posts_per_page_mobile',
-            'aria-label' => '',
-            'type' => 'number',
-            'instructions' => '',
-            'required' => 0,
-            'conditional_logic' => 0,
-            'wrapper' => array(
-                'width' => '50',
-                'class' => '',
-                'id' => '',
-            ),
-            'show_in_graphql' => 1,
-            'default_value' => 8,
-            'min' => '',
+            'min' => 3,
             'max' => '',
             'placeholder' => '',
             'step' => '',
@@ -155,6 +132,3 @@ $post_grid =  array(
     'min' => '',
     'max' => '1',
 );
-
-
-?>

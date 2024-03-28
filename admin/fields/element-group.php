@@ -1,22 +1,22 @@
 <?php
 
-require_once('subfields/single-text-block.php');
-require_once('subfields/link-banner.php');
-require_once('subfields/accordion.php');
-require_once('subfields/image-text.php');
-require_once('subfields/downloads.php');
-require_once('subfields/text-only.php');
-require_once('subfields/hero.php');
-require_once('subfields/contact.php');
-require_once('subfields/media-slider.php');
-require_once('subfields/contact-person.php');
-require_once('subfields/person-grid.php');
-require_once('subfields/logo-repeater.php');
-require_once('subfields/testimonials.php');
-require_once('subfields/grid.php');
-require_once('subfields/post-grid-teaser.php');
-require_once('subfields/post-grid.php');
-require_once('subfields/google-map.php');
+require_once ('subfields/single-text-block.php');
+require_once ('subfields/link-banner.php');
+require_once ('subfields/accordion.php');
+require_once ('subfields/image-text.php');
+require_once ('subfields/downloads.php');
+require_once ('subfields/text-only.php');
+require_once ('subfields/hero.php');
+require_once ('subfields/contact.php');
+require_once ('subfields/media-slider.php');
+require_once ('subfields/contact-person.php');
+require_once ('subfields/person-grid.php');
+require_once ('subfields/logo-repeater.php');
+require_once ('subfields/testimonials.php');
+require_once ('subfields/grid.php');
+require_once ('subfields/post-grid-teaser.php');
+require_once ('subfields/post-grid.php');
+require_once ('subfields/google-map.php');
 
 acf_add_local_field_group(
 	array(
@@ -71,6 +71,13 @@ acf_add_local_field_group(
 					'param' => 'post_type',
 					'operator' => '==',
 					'value' => 'page',
+				),
+			),
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
 				),
 			),
 		),
