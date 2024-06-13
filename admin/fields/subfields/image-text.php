@@ -20,7 +20,7 @@ $image_text = array(
                 'class' => '',
                 'id' => '',
             ),
-            'return_format' => 'id',
+            'return_format' => 'array',
             'library' => 'all',
             'min_width' => '',
             'min_height' => '',
