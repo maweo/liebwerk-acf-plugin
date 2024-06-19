@@ -17,6 +17,7 @@ require_once ('subfields/grid.php');
 require_once ('subfields/post-grid-teaser.php');
 require_once ('subfields/post-grid.php');
 require_once ('subfields/google-map.php');
+require_once ('subfields/hero-small.php');
 
 acf_add_local_field_group(
 	array(
@@ -49,6 +50,7 @@ acf_add_local_field_group(
 					'downloads' => $downloads,
 					'text-only' => $text_only,
 					'hero' => $hero,
+					'hero-small' => $hero_small,
 					'contact' => $contact,
 					'media-slider' => $media_slider,
 					'contact-person' => $contact_person,
