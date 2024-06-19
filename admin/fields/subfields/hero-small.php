@@ -115,7 +115,7 @@ $hero_small = array(
         array(
             'key' => 'field_66727608a74f6',
             'label' => 'Image Right',
-            'name' => 'right',
+            'name' => 'image_right',
             'aria-label' => '',
             'type' => 'image',
             'instructions' => '',
@@ -134,7 +134,7 @@ $hero_small = array(
             'max_width' => '',
             'max_height' => '',
             'max_size' => '',
-            'mime_types' => '',
+            'mime_types' => '.jpg, .jpeg, .png, .webp, .bmp',
             'preview_size' => 'medium',
         ),
     ),
