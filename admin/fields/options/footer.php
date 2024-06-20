@@ -377,7 +377,7 @@ acf_add_local_field_group(array(
 		array(
 			'key' => 'field_651e4fa33605f',
 			'label' => 'Icons',
-			'name' => 'icons',
+			'name' => 'footer_icons',
 			'aria-label' => '',
 			'type' => 'repeater',
 			'instructions' => '',
