@@ -190,7 +190,6 @@ $image_text_brush_layout = array(
             ),
             'choices' => array(
                 'left' => 'Links',
-                'center' => 'Zentriert',
                 'right' => 'Rechts',
             ),
             'default_value' => '',
