@@ -3,7 +3,8 @@
 require_once ('subfields/single-text-block.php');
 require_once ('subfields/link-banner.php');
 require_once ('subfields/accordion.php');
-require_once ('subfields/image-text.php');
+require_once ('subfields/image-text-default.php');
+require_once ('subfields/image-text-brush-layout.php');
 require_once ('subfields/downloads.php');
 require_once ('subfields/text-only.php');
 require_once ('subfields/hero.php');
@@ -45,7 +46,8 @@ acf_add_local_field_group(
 					'single-text-block' => $single_text_block,
 					'link-banner' => $linkbanner_cta,
 					'accordion' => $accordion,
-					'image-text' => $image_text,
+					'image-text-default' => $image_text_default,
+					'image-text-brush-layout' => $image_text_brush_layout,
 					'downloads' => $downloads,
 					'text-only' => $text_only,
 					'hero' => $hero,
