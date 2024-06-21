@@ -3,7 +3,7 @@
 $accordion = array(
     'key' => 'layout_642ea5b4495fa',
     'name' => 'accordion',
-    'label' => 'Accordion',
+    'label' => 'FAQ',
     'display' => 'block',
     'sub_fields' => array(
         array(
