@@ -14,6 +14,7 @@ require_once ('subfields/contact-person.php');
 require_once ('subfields/person-grid.php');
 require_once ('subfields/logo-repeater.php');
 require_once ('subfields/testimonials.php');
+require_once ('subfields/sales-arguments.php');
 require_once ('subfields/grid.php');
 require_once ('subfields/post-grid-teaser.php');
 require_once ('subfields/post-grid.php');
@@ -57,6 +58,7 @@ acf_add_local_field_group(
 					'person-grid' => $person_grid,
 					'logo-repeater' => $logo_repeater,
 					'testimonials' => $testimonials,
+					'sales-arguments' => $sales_arguments,
 					'grid' => $grid,
 					'post-grid-teaser' => $post_grid_teaser,
 					'post-grid' => $post_grid,
