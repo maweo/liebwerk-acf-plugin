@@ -18,6 +18,7 @@ require_once ('subfields/sales-arguments.php');
 require_once ('subfields/grid.php');
 require_once ('subfields/post-grid-teaser.php');
 require_once ('subfields/post-grid.php');
+require_once ('subfields/product-grid.php');
 require_once ('subfields/google-map.php');
 
 acf_add_local_field_group(
@@ -49,6 +50,7 @@ acf_add_local_field_group(
 					'accordion' => $accordion,
 					'image-text-default' => $image_text_default,
 					'image-text-brush-layout' => $image_text_brush_layout,
+					'product-grid' => $product_grid,
 					'downloads' => $downloads,
 					'text-only' => $text_only,
 					'hero' => $hero,
