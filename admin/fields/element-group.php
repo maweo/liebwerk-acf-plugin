@@ -18,6 +18,7 @@ require_once ('subfields/sales-arguments.php');
 require_once ('subfields/grid.php');
 require_once ('subfields/post-grid-teaser.php');
 require_once ('subfields/post-grid.php');
+require_once ('subfields/product-grid.php');
 require_once ('subfields/google-map.php');
 require_once ('subfields/hero-small.php');
 
@@ -50,6 +51,7 @@ acf_add_local_field_group(
 					'accordion' => $accordion,
 					'image-text-default' => $image_text_default,
 					'image-text-brush-layout' => $image_text_brush_layout,
+					'product-grid' => $product_grid,
 					'downloads' => $downloads,
 					'text-only' => $text_only,
 					'hero' => $hero,
@@ -86,6 +88,13 @@ acf_add_local_field_group(
 					'value' => 'post',
 				),
 			),
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'product',
+				),
+			),
 		),
 		'menu_order' => 0,
 		'position' => 'acf_after_title',
@@ -93,16 +102,16 @@ acf_add_local_field_group(
 		'label_placement' => 'top',
 		'instruction_placement' => 'label',
 		'hide_on_screen' => array(
-			0 => 'the_content',
-			1 => 'excerpt',
+			// 0 => 'the_content',
+			// 1 => 'excerpt',
 			2 => 'discussion',
 			3 => 'comments',
 			4 => 'author',
-			5 => 'format',
+			//5 => 'format',
 			// 6 => 'page_attributes',
-			7 => 'featured_image',
-			8 => 'categories',
-			9 => 'tags',
+			// 7 => 'featured_image',
+			// 8 => 'categories',
+			// 9 => 'tags',
 		),
 		'active' => true,
 		'description' => '',

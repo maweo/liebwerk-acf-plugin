@@ -20,7 +20,8 @@
  * @subpackage Maweo_Custom_Field_Elements/admin
  * @author     MAWEO <office@maweo.at>
  */
-class Maweo_Custom_Field_Elements_Admin {
+class Maweo_Custom_Field_Elements_Admin
+{
 
 	/**
 	 * The ID of this plugin.
@@ -47,34 +48,47 @@ class Maweo_Custom_Field_Elements_Admin {
 	 * @param      string    $plugin_name       The name of this plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
-	public function __construct( $plugin_name, $version ) {
+	public function __construct($plugin_name, $version)
+	{
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
 	}
 
-	public function register_custom_fields() {
+	public function register_custom_fields()
+	{
 		if (!class_exists('ACF')) {
 			return;
 		}
 
-		require_once('fields/element-group.php');
+		require_once ('fields/element-group.php');
 	}
 
-	public function register_custom_post_type_fields() {
+	public function register_custom_post_type_fields()
+	{
 		if (!class_exists('ACF')) {
 			return;
 		}
 
-		require_once('fields/cpt.php');
+		require_once ('fields/cpt.php');
 	}
 
-	public function register_option_fields() {
+	public function register_product_extension_fields()
+	{
 		if (!class_exists('ACF')) {
 			return;
 		}
-		
-		require_once('fields/options.php');
+
+		require_once ('fields/product-extensions.php');
+	}
+
+	public function register_option_fields()
+	{
+		if (!class_exists('ACF')) {
+			return;
+		}
+
+		require_once ('fields/options.php');
 	}
 }

@@ -27,7 +27,8 @@
  * @subpackage Maweo_Custom_Field_Elements/includes
  * @author     MAWEO <office@maweo.at>
  */
-class Maweo_Custom_Field_Elements {
+class Maweo_Custom_Field_Elements
+{
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -66,8 +67,9 @@ class Maweo_Custom_Field_Elements {
 	 *
 	 * @since    1.0.0
 	 */
-	public function __construct() {
-		if ( defined( 'MAWEO_CUSTOM_FIELD_ELEMENTS_VERSION' ) ) {
+	public function __construct()
+	{
+		if (defined('MAWEO_CUSTOM_FIELD_ELEMENTS_VERSION')) {
 			$this->version = MAWEO_CUSTOM_FIELD_ELEMENTS_VERSION;
 		} else {
 			$this->version = '1.0.0';
@@ -97,45 +99,46 @@ class Maweo_Custom_Field_Elements {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function load_dependencies() {
+	private function load_dependencies()
+	{
 
 		/**
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-maweo-custom-field-elements-loader.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-maweo-custom-field-elements-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-maweo-custom-field-elements-i18n.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-maweo-custom-field-elements-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-maweo-custom-field-elements-admin.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/class-maweo-custom-field-elements-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-maweo-custom-field-elements-public.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'public/class-maweo-custom-field-elements-public.php';
 
 		/**
 		 * The file for creating all of our custom post type elements
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/cpt/cpt.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/cpt/cpt.php';
 
 		/**
 		 * The file for auto-populating select-fields with post-types
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/fields/utils/auto-populate-fields.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/fields/utils/auto-populate-fields.php';
 
 		/**
 		 * The file for creating all of our ACF Options Pages
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/options-pages/options-pages.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/options-pages/options-pages.php';
 
 		$this->loader = new Maweo_Custom_Field_Elements_Loader();
 
@@ -150,11 +153,12 @@ class Maweo_Custom_Field_Elements {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function set_locale() {
+	private function set_locale()
+	{
 
 		$plugin_i18n = new Maweo_Custom_Field_Elements_i18n();
 
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+		$this->loader->add_action('plugins_loaded', $plugin_i18n, 'load_plugin_textdomain');
 
 	}
 
@@ -165,13 +169,15 @@ class Maweo_Custom_Field_Elements {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function define_admin_hooks() {
+	private function define_admin_hooks()
+	{
 
-		$plugin_admin = new Maweo_Custom_Field_Elements_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Maweo_Custom_Field_Elements_Admin($this->get_plugin_name(), $this->get_version());
 
-		$this->loader->add_action( 'acf/init', $plugin_admin, 'register_custom_fields' );
-		$this->loader->add_action( 'acf/init', $plugin_admin, 'register_custom_post_type_fields' );
-		$this->loader->add_action( 'acf/init', $plugin_admin, 'register_option_fields' );
+		$this->loader->add_action('acf/init', $plugin_admin, 'register_custom_fields');
+		$this->loader->add_action('acf/init', $plugin_admin, 'register_custom_post_type_fields');
+		$this->loader->add_action('acf/init', $plugin_admin, 'register_product_extension_fields');
+		$this->loader->add_action('acf/init', $plugin_admin, 'register_option_fields');
 	}
 
 	/**
@@ -181,9 +187,10 @@ class Maweo_Custom_Field_Elements {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function define_public_hooks() {
+	private function define_public_hooks()
+	{
 
-		$plugin_public = new Maweo_Custom_Field_Elements_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Maweo_Custom_Field_Elements_Public($this->get_plugin_name(), $this->get_version());
 	}
 
 	/**
@@ -191,7 +198,8 @@ class Maweo_Custom_Field_Elements {
 	 *
 	 * @since    1.0.0
 	 */
-	public function run() {
+	public function run()
+	{
 		$this->loader->run();
 	}
 
@@ -202,7 +210,8 @@ class Maweo_Custom_Field_Elements {
 	 * @since     1.0.0
 	 * @return    string    The name of the plugin.
 	 */
-	public function get_plugin_name() {
+	public function get_plugin_name()
+	{
 		return $this->plugin_name;
 	}
 
@@ -212,7 +221,8 @@ class Maweo_Custom_Field_Elements {
 	 * @since     1.0.0
 	 * @return    Maweo_Custom_Field_Elements_Loader    Orchestrates the hooks of the plugin.
 	 */
-	public function get_loader() {
+	public function get_loader()
+	{
 		return $this->loader;
 	}
 
@@ -222,7 +232,8 @@ class Maweo_Custom_Field_Elements {
 	 * @since     1.0.0
 	 * @return    string    The version number of the plugin.
 	 */
-	public function get_version() {
+	public function get_version()
+	{
 		return $this->version;
 	}
 
