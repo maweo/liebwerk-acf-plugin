@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-$text_only =  array(
+$text_only = array(
     'key' => 'layout_642c011941341',
     'name' => 'text-only',
     'label' => 'Text-Only',
@@ -75,6 +75,31 @@ $text_only =  array(
             'toolbar' => 'basic',
             'media_upload' => 0,
             'delay' => 0,
+        ),
+        array(
+            'key' => 'field_628x3ac5b2194',
+            'label' => 'Ausrichtung',
+            'name' => 'content_alignment',
+            'aria-label' => '',
+            'type' => 'radio',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '50',
+                'class' => '',
+                'id' => '',
+            ),
+            'choices' => array(
+                'column' => '1 Spalte',
+                'row' => '2 Spalten',
+            ),
+            'default_value' => 'column : 1 Spalte',
+            'return_format' => 'value',
+            'allow_null' => 0,
+            'other_choice' => 0,
+            'layout' => 'vertical',
+            'save_other_choice' => 0,
         ),
         array(
             'key' => 'field_642c0211938a2',
