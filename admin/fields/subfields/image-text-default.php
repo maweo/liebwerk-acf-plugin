@@ -148,32 +148,6 @@ $image_text_default = array(
             'delay' => 0,
         ),
         array(
-            'key' => 'field_668509a2bb7a4',
-            'label' => 'Number of images',
-            'name' => 'number_of_images',
-            'aria-label' => '',
-            'type' => 'select',
-            'instructions' => '',
-            'required' => 0,
-            'conditional_logic' => 0,
-            'wrapper' => array(
-                'width' => '',
-                'class' => '',
-                'id' => '',
-            ),
-            'choices' => array(
-                'one' => 'One',
-                'two' => 'Two',
-            ),
-            'default_value' => 'one',
-            'return_format' => 'value',
-            'multiple' => 0,
-            'allow_null' => 0,
-            'ui' => 0,
-            'ajax' => 0,
-            'placeholder' => '',
-        ),
-        array(
             'key' => 'field_66850a62bb7a5',
             'label' => 'Image',
             'name' => 'image',
@@ -195,7 +169,7 @@ $image_text_default = array(
             'max_width' => '',
             'max_height' => '',
             'max_size' => '',
-            'mime_types' => '',
+            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .svg, .bmp, .ico, .png',
             'preview_size' => 'medium',
         ),
         array(
@@ -206,15 +180,7 @@ $image_text_default = array(
             'type' => 'image',
             'instructions' => '',
             'required' => 0,
-            'conditional_logic' => array(
-                array(
-                    array(
-                        'field' => 'field_668509a2bb7a4',
-                        'operator' => '==',
-                        'value' => 'two',
-                    ),
-                ),
-            ),
+            'conditional_logic' => 0,
             'wrapper' => array(
                 'width' => '',
                 'class' => '',
@@ -228,7 +194,7 @@ $image_text_default = array(
             'max_width' => '',
             'max_height' => '',
             'max_size' => '',
-            'mime_types' => '',
+            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .svg, .bmp, .ico, .png',
             'preview_size' => 'medium',
         ),
         array(
@@ -239,17 +205,9 @@ $image_text_default = array(
             'type' => 'radio',
             'instructions' => '',
             'required' => 1,
-            'conditional_logic' => array(
-                array(
-                    array(
-                        'field' => 'field_668509a2bb7a4',
-                        'operator' => '==',
-                        'value' => 'one',
-                    ),
-                ),
-            ),
+            'conditional_logic' => 0,
             'wrapper' => array(
-                'width' => '20',
+                'width' => '50',
                 'class' => '',
                 'id' => '',
             ),
@@ -274,7 +232,7 @@ $image_text_default = array(
             'required' => 1,
             'conditional_logic' => 0,
             'wrapper' => array(
-                'width' => '100',
+                'width' => '50',
                 'class' => '',
                 'id' => '',
             ),
