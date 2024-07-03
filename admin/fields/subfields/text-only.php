@@ -72,7 +72,7 @@ $text_only = array(
             ),
             'default_value' => '',
             'tabs' => 'all',
-            'toolbar' => 'basic',
+            'toolbar' => 'full',
             'media_upload' => 0,
             'delay' => 0,
         ),
