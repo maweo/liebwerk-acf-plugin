@@ -23,6 +23,7 @@ require_once ('subfields/google-map.php');
 require_once ('subfields/timeline.php');
 require_once ('subfields/hero-small.php');
 require_once ('subfields/store-locator.php');
+require_once ('subfields/engravings.php');
 require_once ('subfields/elements-grid.php');
 
 acf_add_local_field_group(
@@ -69,8 +70,9 @@ acf_add_local_field_group(
 					'grid' => $grid,
 					'post-grid-teaser' => $post_grid_teaser,
 					'post-grid' => $post_grid,
-					'google-map' => $google_map,
 					'store-locator' => $store_locator,
+					'engravings' => $engravings,
+					'google-map' => $google_map,
 					'timeline' => $timeline,
 					'elements-grid' => $elements_grid,
 				),
