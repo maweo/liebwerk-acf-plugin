@@ -20,9 +20,11 @@ require_once ('subfields/post-grid-teaser.php');
 require_once ('subfields/post-grid.php');
 require_once ('subfields/product-grid.php');
 require_once ('subfields/google-map.php');
+require_once ('subfields/timeline.php');
 require_once ('subfields/hero-small.php');
 require_once ('subfields/store-locator.php');
 require_once ('subfields/engravings.php');
+require_once ('subfields/elements-grid.php');
 
 acf_add_local_field_group(
 	array(
@@ -70,6 +72,9 @@ acf_add_local_field_group(
 					'post-grid' => $post_grid,
 					'store-locator' => $store_locator,
 					'engravings' => $engravings,
+					'google-map' => $google_map,
+					'timeline' => $timeline,
+					'elements-grid' => $elements_grid,
 				),
 				'button_label' => 'Layout hinzufügen',
 				'min' => '',
