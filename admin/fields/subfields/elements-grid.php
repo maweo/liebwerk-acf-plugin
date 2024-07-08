@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 $elements_grid = array(
-	'key' => 'layout_668297e864170',
+	'key' => 'layout_62829ce86427f',
 	'name' => 'elements_grid',
 	'label' => '3er Grid',
 	'display' => 'block',
