@@ -117,7 +117,7 @@ $media_slider = array(
             'max_width' => '',
             'max_height' => '',
             'max_size' => '',
-            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .svg, .bmp, .ico, .png, .MP4, .WebM',
+            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .webp, .svg, .bmp, .ico, .png, .MP4, .WebM',
             'insert' => 'append',
             'preview_size' => 'medium',
         ),

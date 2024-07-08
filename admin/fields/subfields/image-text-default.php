@@ -169,7 +169,7 @@ $image_text_default = array(
             'max_width' => '',
             'max_height' => '',
             'max_size' => '',
-            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .svg, .bmp, .ico, .png',
+            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .webp, .svg, .bmp, .ico, .png',
             'preview_size' => 'medium',
         ),
         array(
@@ -194,7 +194,7 @@ $image_text_default = array(
             'max_width' => '',
             'max_height' => '',
             'max_size' => '',
-            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .svg, .bmp, .ico, .png',
+            'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .webp, .svg, .bmp, .ico, .png',
             'preview_size' => 'medium',
         ),
         array(

@@ -171,7 +171,7 @@ $logo_repeater = array(
                     'max_width' => '',
                     'max_height' => '',
                     'max_size' => '4',
-                    'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .svg, .bmp, .ico, .png',
+                    'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .webp, .svg, .bmp, .ico, .png',
                     'preview_size' => 'medium',
                     'parent_repeater' => 'field_6538df817c5ae',
                 ),
