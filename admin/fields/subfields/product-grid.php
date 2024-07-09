@@ -129,7 +129,7 @@ $product_grid = array(
                 'id' => ''
             ),
             'layout' => 'table',
-            'min' => 4,
+            'min' => 2,
             'max' => 0,
             'collapsed' => '',
             'button_label' => 'Add product',
@@ -190,7 +190,7 @@ $product_grid = array(
                 'id' => ''
             ),
             'default_value' => '',
-            'min' => 4,
+            'min' => 2,
             'max' => '',
             'placeholder' => '',
             'step' => '',
