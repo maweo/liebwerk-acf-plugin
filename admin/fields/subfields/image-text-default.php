@@ -7,6 +7,31 @@ $image_text_default = array(
     'display' => 'block',
     'sub_fields' => array(
         array(
+			'key' => 'field_66977885564f9',
+			'label' => 'Section Abstand',
+			'name' => 'section_padding',
+			'aria-label' => '',
+			'type' => 'radio',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'big' => 'Groß',
+				'small' => 'Klein',
+			),
+			'default_value' => '',
+			'return_format' => 'value',
+			'allow_null' => 0,
+			'other_choice' => 0,
+			'layout' => 'vertical',
+			'save_other_choice' => 0,
+		),
+        array(
             'key' => 'field_642c3a08ba14f',
             'label' => 'Icon',
             'name' => 'heading_icon',
