@@ -7,7 +7,7 @@ $image_text_default = array(
     'display' => 'block',
     'sub_fields' => array(
         array(
-			'key' => 'field_66977885564f9',
+			'key' => 'field_66977885564f7',
 			'label' => 'Section Abstand',
 			'name' => 'section_padding',
 			'aria-label' => '',
