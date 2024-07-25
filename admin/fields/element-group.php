@@ -25,6 +25,7 @@ require_once ('subfields/hero-small.php');
 require_once ('subfields/store-locator.php');
 require_once ('subfields/engravings.php');
 require_once ('subfields/elements-grid.php');
+require_once ('subfields/video.php');
 
 acf_add_local_field_group(
 	array(
@@ -75,6 +76,7 @@ acf_add_local_field_group(
 					'google-map' => $google_map,
 					'timeline' => $timeline,
 					'elements-grid' => $elements_grid,
+					'video' => $video,
 				),
 				'button_label' => 'Layout hinzufügen',
 				'min' => '',
