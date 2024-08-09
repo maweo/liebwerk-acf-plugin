@@ -173,6 +173,32 @@ $image_text_default = array(
             'delay' => 0,
         ),
         array(
+            'key' => 'field_6464bef45bd4b9',
+            'label' => 'Media Type',
+            'name' => 'media_type',
+            'aria-label' => '',
+            'type' => 'select',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '100',
+                'class' => '',
+                'id' => '',
+            ),
+            'choices' => array(
+                'image' => 'Image',
+                'youtube' => 'Youtube Video',
+            ),
+            'default_value' => 'image',
+            'return_format' => 'value',
+            'multiple' => 0,
+            'allow_null' => 0,
+            'ui' => 0,
+            'ajax' => 0,
+            'placeholder' => '',
+        ),
+        array(
             'key' => 'field_66850a62bb7a5',
             'label' => 'Image',
             'name' => 'image',
@@ -180,7 +206,16 @@ $image_text_default = array(
             'type' => 'image',
             'instructions' => '',
             'required' => 0,
-            'conditional_logic' => 0,
+            'conditional_logic' =>
+            array(
+                array(
+                    array(
+                        'field' => 'field_6464bef45bd4b9',
+                        'operator' => '==',
+                        'value' => 'image',
+                    ),
+                ),
+            ),
             'wrapper' => array(
                 'width' => '',
                 'class' => '',
@@ -205,7 +240,16 @@ $image_text_default = array(
             'type' => 'image',
             'instructions' => '',
             'required' => 0,
-            'conditional_logic' => 0,
+            'conditional_logic' =>
+            array(
+                array(
+                    array(
+                        'field' => 'field_6464bef45bd4b9',
+                        'operator' => '==',
+                        'value' => 'image',
+                    ),
+                ),
+            ),
             'wrapper' => array(
                 'width' => '',
                 'class' => '',
@@ -221,6 +265,35 @@ $image_text_default = array(
             'max_size' => '',
             'mime_types' => '.jpg, .jpeg, .gif, .png, .apng, .webp, .svg, .bmp, .ico, .png',
             'preview_size' => 'medium',
+        ),
+        array(
+            'key' => 'field_643d347dbdx380',
+            'label' => 'Youtube Embed Code',
+            'name' => 'youtube_embedd_code',
+            'aria-label' => '',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' =>
+            array(
+                array(
+                    array(
+                        'field' => 'field_6464bef45bd4b9',
+                        'operator' => '==',
+                        'value' => 'youtube',
+                    ),
+                ),
+            ),
+            'wrapper' => array(
+                'width' => '100',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'maxlength' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
         ),
         array(
             'key' => 'field_648d3a95bd151',
