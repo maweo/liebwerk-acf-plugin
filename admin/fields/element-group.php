@@ -10,7 +10,6 @@ require_once('subfields/contact.php');
 require_once('subfields/media-slider.php');
 require_once('subfields/testimonials.php');
 require_once('subfields/sales-arguments.php');
-require_once('subfields/grid.php');
 require_once('subfields/post-grid-teaser.php');
 require_once('subfields/post-grid.php');
 require_once('subfields/product-grid.php');
@@ -49,7 +48,6 @@ acf_add_local_field_group(
 					'engravings' => $engravings,
 					'google-map' => $google_map,
 					'accordion' => $accordion,
-					'grid' => $grid,
 					'hero' => $hero,
 					'hero-small' => $hero_small,
 					'image-text-default' => $image_text_default,
