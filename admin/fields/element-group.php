@@ -1,31 +1,25 @@
 <?php
 
-require_once ('subfields/single-text-block.php');
-require_once ('subfields/link-banner.php');
-require_once ('subfields/accordion.php');
-require_once ('subfields/image-text-default.php');
-require_once ('subfields/image-text-brush-layout.php');
-require_once ('subfields/downloads.php');
-require_once ('subfields/text-only.php');
-require_once ('subfields/hero.php');
-require_once ('subfields/contact.php');
-require_once ('subfields/media-slider.php');
-require_once ('subfields/contact-person.php');
-require_once ('subfields/person-grid.php');
-require_once ('subfields/logo-repeater.php');
-require_once ('subfields/testimonials.php');
-require_once ('subfields/sales-arguments.php');
-require_once ('subfields/grid.php');
-require_once ('subfields/post-grid-teaser.php');
-require_once ('subfields/post-grid.php');
-require_once ('subfields/product-grid.php');
-require_once ('subfields/google-map.php');
-require_once ('subfields/timeline.php');
-require_once ('subfields/hero-small.php');
-require_once ('subfields/store-locator.php');
-require_once ('subfields/engravings.php');
-require_once ('subfields/elements-grid.php');
-require_once ('subfields/video.php');
+require_once('subfields/link-banner.php');
+require_once('subfields/accordion.php');
+require_once('subfields/image-text-default.php');
+require_once('subfields/image-text-brush-layout.php');
+require_once('subfields/text-only.php');
+require_once('subfields/hero.php');
+require_once('subfields/contact.php');
+require_once('subfields/media-slider.php');
+require_once('subfields/testimonials.php');
+require_once('subfields/sales-arguments.php');
+require_once('subfields/grid.php');
+require_once('subfields/post-grid-teaser.php');
+require_once('subfields/post-grid.php');
+require_once('subfields/product-grid.php');
+require_once('subfields/google-map.php');
+require_once('subfields/timeline.php');
+require_once('subfields/hero-small.php');
+require_once('subfields/store-locator.php');
+require_once('subfields/engravings.php');
+require_once('subfields/video.php');
 
 acf_add_local_field_group(
 	array(
@@ -51,31 +45,25 @@ acf_add_local_field_group(
 					'id' => '',
 				),
 				'layouts' => array(
-					'single-text-block' => $single_text_block,
-					'link-banner' => $linkbanner_cta,
-					'accordion' => $accordion,
-					'image-text-default' => $image_text_default,
-					'image-text-brush-layout' => $image_text_brush_layout,
-					'product-grid' => $product_grid,
-					'downloads' => $downloads,
-					'text-only' => $text_only,
-					'hero' => $hero,
-					'hero-small' => $hero_small,
 					'contact' => $contact,
-					'media-slider' => $media_slider,
-					'contact-person' => $contact_person,
-					'person-grid' => $person_grid,
-					'logo-repeater' => $logo_repeater,
-					'testimonials' => $testimonials,
-					'sales-arguments' => $sales_arguments,
-					'grid' => $grid,
-					'post-grid-teaser' => $post_grid_teaser,
-					'post-grid' => $post_grid,
-					'store-locator' => $store_locator,
 					'engravings' => $engravings,
 					'google-map' => $google_map,
+					'accordion' => $accordion,
+					'grid' => $grid,
+					'hero' => $hero,
+					'hero-small' => $hero_small,
+					'image-text-default' => $image_text_default,
+					'image-text-brush-layout' => $image_text_brush_layout,
+					'link-banner' => $linkbanner_cta,
+					'media-slider' => $media_slider,
+					'product-grid' => $product_grid,
+					'text-only' => $text_only,
+					'post-grid-teaser' => $post_grid_teaser,
+					'post-grid' => $post_grid,
+					'sales-arguments' => $sales_arguments,
+					'store-locator' => $store_locator,
+					'testimonials' => $testimonials,
 					'timeline' => $timeline,
-					'elements-grid' => $elements_grid,
 					'video' => $video,
 				),
 				'button_label' => 'Layout hinzufügen',
