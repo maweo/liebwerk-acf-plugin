@@ -13,7 +13,6 @@ require_once('subfields/elements-grid.php');
 require_once('subfields/post-grid-teaser.php');
 require_once('subfields/post-grid.php');
 require_once('subfields/product-grid.php');
-require_once('subfields/google-map.php');
 require_once('subfields/timeline.php');
 require_once('subfields/hero-small.php');
 require_once('subfields/store-locator.php');
@@ -46,7 +45,6 @@ acf_add_local_field_group(
 				'layouts' => array(
 					'contact' => $contact,
 					'engravings' => $engravings,
-					'google-map' => $google_map,
 					'accordion' => $accordion,
 					'elements-grid' => $elements_grid,
 					'hero' => $hero,
