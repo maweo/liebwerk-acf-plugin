@@ -7,7 +7,6 @@ require_once('subfields/image-text-brush-layout.php');
 require_once('subfields/text-only.php');
 require_once('subfields/hero.php');
 require_once('subfields/contact.php');
-require_once('subfields/media-slider.php');
 require_once('subfields/testimonials.php');
 require_once('subfields/sales-arguments.php');
 require_once('subfields/elements-grid.php');
@@ -55,7 +54,6 @@ acf_add_local_field_group(
 					'image-text-default' => $image_text_default,
 					'image-text-brush-layout' => $image_text_brush_layout,
 					'link-banner' => $linkbanner_cta,
-					'media-slider' => $media_slider,
 					'product-grid' => $product_grid,
 					'text-only' => $text_only,
 					'post-grid-teaser' => $post_grid_teaser,
